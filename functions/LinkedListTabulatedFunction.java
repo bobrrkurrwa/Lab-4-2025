@@ -64,15 +64,8 @@ public class LinkedListTabulatedFunction implements TabulatedFunction {
         head.prev = head;
 
         FunctionNode current = head;
-        for (int i = 0; i < pointsCount; i++) {
-
-            FunctionNode newNode = new FunctionNode(new FunctionPoint(points[i]));
-
-            newNode.prev = current;
-            newNode.next = head;
-            current.next = newNode;
-            head.prev = newNode;
-            current = newNode;
+        for (int i = 0; i < points.length; i++) {
+            addNodeToTail(new FunctionPoint(points[i]));
         }
 
         this.lastIndex = 0;

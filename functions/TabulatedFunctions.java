@@ -4,7 +4,7 @@ import java.io.*;
 
 public class TabulatedFunctions {
 
-    private TabulatedFunctions(){};
+    private TabulatedFunctions(){}; // приватный конструктор для исключения возможности создания объекта данного класса
 
     public static TabulatedFunction tabulate(Function func, double leftX, double rightX, int pointsCount){
         if (func == null) throw new IllegalArgumentException("Function must exist");
