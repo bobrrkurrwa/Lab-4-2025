@@ -110,7 +110,7 @@ public class Main {
             }
 
             // Часть 6: Сериализация
-            Function compFunc = Functions.composition(new Log(Math.E), new Exp());
+            Function compFunc = Functions.composition(new Exp(), new Log(Math.E));
             TabulatedFunction compTab = TabulatedFunctions.tabulate(compFunc, 0, 10, 11);
             String serFile = "composition.ser";
 
