@@ -3,7 +3,7 @@ import java.io.*;
 
 //интерфейс взаимодействия с табулированной функцией (двусвязный список или массив)
 
-public interface TabulatedFunction extends Function, Serializable, Externalizable {
+public interface TabulatedFunction extends Function, Externalizable {
 
     // узнать количество точек
     int getPointsCount();
