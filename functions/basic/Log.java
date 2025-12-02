@@ -6,7 +6,7 @@ public class Log implements Function {
     double base;
 
     public Log(double base) {
-        if (base < 0) throw new IllegalArgumentException("Log base is incorrect");
+        if ( base < 0 || base ==1 ) throw new IllegalArgumentException("Log base is incorrect");
         this.base = base;
     }
 
